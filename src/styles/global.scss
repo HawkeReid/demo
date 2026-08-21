@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #0078c8;
+  --primary-light: #25b7c9;
+  --primary-dark: #005a9e;
+  --success-color: #36cfc9;
+  --warning-color: #faad14;
+  --danger-color: #f56c6c;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-placeholder: #9ca3af;
+  --border-color: #e5e7eb;
+  --bg-page: #f5f7fa;
+  --bg-card: #ffffff;
+  --bg-hover: #f0f7ff;
+  --radius-card: 8px;
+  --radius-btn: 6px;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --navbar-height: 56px;
+  --sidebar-width: 240px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Element Plus 主题覆盖 */
+.el-button--primary {
+  --el-button-bg-color: var(--primary-color);
+  --el-button-border-color: var(--primary-color);
+  --el-button-hover-bg-color: var(--primary-dark);
+  --el-button-hover-border-color: var(--primary-dark);
+}
+
+.el-button--success {
+  --el-button-bg-color: var(--success-color);
+  --el-button-border-color: var(--success-color);
+}
+
+.el-tabs__item.is-active {
+  color: var(--primary-color);
+}
+
+.el-tabs__active-bar {
+  background-color: var(--primary-color);
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: var(--primary-color);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 通用卡片 */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+}
+
+/* 页面标题 */
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
